@@ -8,94 +8,165 @@
 
 <title>Sanjay Dhariwal | Electrical Engineer</title>
 
-<style>
 
+<style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Segoe UI',Arial,sans-serif;
+font-family:"Segoe UI",Arial,sans-serif;
 }
+
 
 body{
+
 background:#f4f7fb;
 color:#333;
-line-height:1.6;
+
 }
 
+
+/* Navigation */
 
 nav{
+
 background:#0b1f3a;
 padding:15px;
-position:sticky;
-top:0;
+
 }
 
+
 nav ul{
+
 display:flex;
 justify-content:center;
 gap:30px;
 list-style:none;
+
 }
+
 
 nav a{
+
 color:white;
 text-decoration:none;
-font-weight:bold;
+font-weight:600;
+
 }
 
+
+
+
+/* Hero Section */
 
 
 .hero{
 
-background:linear-gradient(135deg,#0b1f3a,#00509e);
+background:linear-gradient(120deg,#003366,#0077b6);
 color:white;
-padding:80px 20px;
-text-align:center;
+
+padding:70px 10%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+gap:60px;
 
 }
 
 
-.hero h1{
+/* Profile Image */
 
-font-size:45px;
+
+.profile img{
+
+width:260px;
+height:260px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:6px solid white;
 
 }
 
 
-.hero p{
 
-font-size:20px;
+/* Hero Text */
+
+
+.hero-text h1{
+
+font-size:48px;
+
+}
+
+
+.hero-text h2{
+
+font-size:25px;
+margin-top:15px;
+
+}
+
+
+.hero-text p{
+
+font-size:18px;
 margin-top:15px;
 
 }
 
 
 
+.buttons{
+
+margin-top:30px;
+
+}
+
+
 .btn{
 
 display:inline-block;
-margin-top:25px;
-padding:12px 25px;
+
 background:white;
-color:#00509e;
+
+color:#003366;
+
+padding:12px 25px;
+
 border-radius:30px;
+
 text-decoration:none;
+
+margin-right:10px;
+
 font-weight:bold;
 
 }
 
 
 
+
+
 section{
 
 max-width:1100px;
+
 margin:40px auto;
+
 background:white;
+
 padding:35px;
+
 border-radius:15px;
+
 box-shadow:0 5px 20px #ddd;
+
 
 }
 
@@ -103,7 +174,8 @@ box-shadow:0 5px 20px #ddd;
 
 h2{
 
-color:#00509e;
+color:#003366;
+
 margin-bottom:20px;
 
 }
@@ -112,10 +184,14 @@ margin-bottom:20px;
 
 .card{
 
-background:#eef4fb;
+background:#eef5fb;
+
 padding:20px;
+
 margin:15px 0;
-border-left:5px solid #00509e;
+
+border-left:5px solid #0077b6;
+
 border-radius:10px;
 
 }
@@ -125,56 +201,99 @@ border-radius:10px;
 .skills{
 
 display:flex;
+
 flex-wrap:wrap;
+
 gap:10px;
 
 }
 
 
-
 .skill{
 
-background:#00509e;
+background:#003366;
+
 color:white;
-padding:10px 15px;
-border-radius:20px;
+
+padding:10px 18px;
+
+border-radius:25px;
 
 }
+
+
+
+.contact a{
+
+color:#0066cc;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
 
 
 
 footer{
 
 background:#0b1f3a;
+
 color:white;
+
 text-align:center;
+
 padding:20px;
 
 }
 
 
 
-@media(max-width:700px){
 
-.hero h1{
-font-size:32px;
+/* Mobile View */
+
+
+@media(max-width:800px){
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
 }
+
+
+.hero-text h1{
+
+font-size:35px;
+
+}
+
 
 nav ul{
+
 flex-direction:column;
 align-items:center;
-}
 
 }
+
+
+}
+
 
 
 </style>
+
 
 </head>
 
 
 
+
 <body>
+
 
 
 <nav>
@@ -193,30 +312,76 @@ align-items:center;
 
 <li><a href="#contact">Contact</a></li>
 
+
 </ul>
 
 </nav>
 
 
 
+
+
+
+<!-- HERO SECTION -->
+
+
 <div class="hero">
+
+
+<div class="profile">
+
+<img src="images/sanjay.jpg" alt="Sanjay Dhariwal">
+
+</div>
+
+
+
+<div class="hero-text">
 
 
 <h1>Sanjay Dhariwal</h1>
 
-<p>
+
+<h2>
 Electrical Engineer | Engineering Management Professional
-</p>
+</h2>
 
 
 <p>
-Instructor | Research Assistant | AI & Machine Learning Researcher
+
+Instructor at Arkansas State University<br>
+
+AI & Machine Learning Researcher<br>
+
+Industrial Automation | Predictive Maintenance | Smart Grid Systems
+
 </p>
 
 
-<a class="btn" href="#">
+
+<div class="buttons">
+
+
+<a class="btn" href="assets/Sanjay_Dhariwal_Resume.pdf">
+
 Download Resume
+
 </a>
+
+
+
+<a class="btn" href="https://www.linkedin.com/in/sanjay-dhariwal-8248032b0" target="_blank">
+
+LinkedIn
+
+</a>
+
+
+</div>
+
+
+</div>
+
 
 
 </div>
@@ -224,9 +389,15 @@ Download Resume
 
 
 
+
+
+
+
 <section id="about">
 
+
 <h2>About Me</h2>
+
 
 <p>
 
@@ -238,13 +409,17 @@ My research interests include Artificial Intelligence, Machine Learning, Industr
 
 </p>
 
+
 </section>
 
 
 
 
 
+
+
 <section id="education">
+
 
 <h2>Education</h2>
 
@@ -254,9 +429,7 @@ My research interests include Artificial Intelligence, Machine Learning, Industr
 <h3>Master of Science - Engineering Management</h3>
 
 <p>
-Arkansas State University, USA
-<br>
-2024
+Arkansas State University, USA (2024)
 </p>
 
 </div>
@@ -268,9 +441,7 @@ Arkansas State University, USA
 <h3>Master of Technology - Electrical Engineering</h3>
 
 <p>
-Kurukshetra University, India
-<br>
-2022
+Kurukshetra University, India (2022)
 </p>
 
 </div>
@@ -282,15 +453,14 @@ Kurukshetra University, India
 <h3>Bachelor of Technology - Electrical Engineering</h3>
 
 <p>
-Kurukshetra University, India
-<br>
-2019
+Kurukshetra University, India (2019)
 </p>
 
 </div>
 
 
 </section>
+
 
 
 
@@ -304,51 +474,52 @@ Kurukshetra University, India
 <h2>Professional Experience</h2>
 
 
+
 <div class="card">
+
 
 <h3>Instructor - Engineering Management</h3>
 
+
 <p>
+
 Arkansas State University
-</p>
 
+<br><br>
 
-<p>
-
-Teaching:
-<br>
-• Quality Control & Improvement
-<br>
-• Statistical Quality Methods
-<br>
-• Engineering Management Concepts
+Teaching Quality Control & Improvement, engineering statistics, and management concepts.
 
 </p>
 
 
 </div>
+
+
 
 
 
 <div class="card">
 
+
 <h3>Executive Research Assistant</h3>
 
+
 <p>
+
 Arkansas State University
+
+<br><br>
+
+Research involving engineering analytics, AI applications, and technology development.
+
 </p>
 
-<p>
-
-Research activities involving engineering analysis, data analytics, and technology development.
-
-</p>
 
 </div>
 
 
-
 </section>
+
 
 
 
@@ -359,85 +530,60 @@ Research activities involving engineering analysis, data analytics, and technolo
 <section id="projects">
 
 
-<h2>Research & Projects</h2>
+<h2>Research Projects</h2>
 
 
 
 <div class="card">
 
+
 <h3>AI-Based Predictive Maintenance</h3>
+
 
 <p>
 
-Machine learning based reliability improvement using:
+Machine Learning Models:
 
 <br>
-LSTM
-<br>
-Random Forest
-<br>
-Support Vector Machine
+LSTM | Random Forest | SVM
 
 <br><br>
 
 Application:
-Industrial equipment monitoring and failure prediction.
+
+Industrial equipment reliability improvement.
 
 </p>
+
 
 </div>
 
 
 
 
+
 <div class="card">
+
 
 <h3>Smart Grid Load Management</h3>
 
-<p>
-
-Developed smart energy management concepts using:
-
-<br>
-• Smart meters
-<br>
-• Load forecasting
-<br>
-• MATLAB simulation
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="card">
-
-<h3>Industrial Automation Systems</h3>
 
 <p>
 
-Experience with:
-
-<br>
-PLC
-<br>
-SCADA
-<br>
-Control Systems
-<br>
-Automation Technologies
+Smart meters, energy optimization, and MATLAB-based load forecasting.
 
 </p>
 
 
 </div>
+
 
 
 
 </section>
+
+
+
 
 
 
@@ -471,11 +617,9 @@ Automation Technologies
 
 <div class="skill">AutoCAD</div>
 
-<div class="skill">MS Project</div>
+<div class="skill">Project Management</div>
 
 <div class="skill">Quality Control</div>
-
-<div class="skill">Project Management</div>
 
 
 </div>
@@ -489,49 +633,65 @@ Automation Technologies
 
 
 
-<section id="contact">
+<section id="contact" class="contact">
 
-
-<section id="contact">
 
 <h2>Contact</h2>
 
+
 <p>
 
+
 GitHub:
+
 <br>
+
 <a href="https://github.com/sanjay-dhariwal" target="_blank">
-https://github.com/sanjay-dhariwal
+
+github.com/sanjay-dhariwal
+
 </a>
 
 
+
 <br><br>
+
 
 
 Portfolio:
+
 <br>
+
 <a href="https://sanjay-dhariwal.github.io" target="_blank">
-https://sanjay-dhariwal.github.io
+
+sanjay-dhariwal.github.io
+
 </a>
+
+
 
 
 <br><br>
 
 
+
 LinkedIn:
+
 <br>
+
 <a href="https://www.linkedin.com/in/sanjay-dhariwal-8248032b0" target="_blank">
+
 LinkedIn Profile
+
 </a>
 
 
 </p>
 
-</section>
-</p>
-
 
 </section>
+
+
 
 
 
@@ -539,9 +699,7 @@ LinkedIn Profile
 
 <footer>
 
-<p>
 © 2026 Sanjay Dhariwal | Engineering Portfolio
-</p>
 
 </footer>
 
